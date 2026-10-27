@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Solver" version="1.3.0.9126"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="120">
+    <identity>
+      <id>cd6d11a2-c4b0-4ddb-82ac-5f281ef2131c</id>
+      <revision>5</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <mixedNumbers>false</mixedNumbers>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>3</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true" hideElementsHighlightings="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Core" version="1.73.9126.0" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.73.9126.0" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.73.9126.0" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="86" height="23" color="#000000" fontSize="10">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Prelim calcs</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="45" width="122" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">n.motor</e>
+          <e type="operand">500</e>
+          <e type="operand" style="unit">rpm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="90" width="121" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T.motormax</e>
+          <e type="operand">5</e>
+          <e type="operand" style="unit">kg</e>
+          <e type="operand" style="unit">cm</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="144" width="183" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T.motoruse</e>
+          <e type="operand">0.5</e>
+          <e type="operand">T.motormax</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="225" top="144" width="136" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T.motoruse</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">250</e>
+          <e type="operand" style="unit">kg</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="9" top="198" width="106" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">r.wheel</e>
+          <e type="operand">20</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="9" top="243" width="157" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ω.motor</e>
+          <e type="operand">n.motor</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">π</e>
+          <e type="operand">60</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="234" top="252" width="136" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ω.motor</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">5.4831</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="9" top="306" width="50" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">Goal</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="360" width="104" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">v.goal</e>
+          <e type="operand">0.3</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand" style="unit">s</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="207" top="360" width="175" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">v.current</e>
+          <e type="operand">ω.motor</e>
+          <e type="operand">r.wheel</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="441" top="360" width="145" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">v.current</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.1097</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand" style="unit">s</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="423" width="160" height="53" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ratio.speed</e>
+          <e type="operand">v.current</e>
+          <e type="operand">v.goal</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="225" top="441" width="148" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ratio.speed</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.3655</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="513" width="150" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T.perwheel</e>
+          <e type="operand">T.motoruse</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="324" top="513" width="136" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T.perwheel</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">250</e>
+          <e type="operand" style="unit">kg</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="576" width="154" height="53" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">F.perwheel</e>
+          <e type="operand">T.perwheel</e>
+          <e type="operand">r.wheel</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="261" top="585" width="154" height="50" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">F.perwheel</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">12500</e>
+          <e type="operand" style="unit">kg</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
