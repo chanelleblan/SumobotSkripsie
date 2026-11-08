@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Sumobot_parts")(type "KiCad")(uri "${KIPRJMOD}/Sumobot_parts.kicad_sym")(options "")(descr ""))
+)
